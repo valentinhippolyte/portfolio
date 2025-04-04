@@ -3,5 +3,13 @@
     "about": "About",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "introduce": {
+    "hi": "Hi there!",
+    "im": "I'm",
+    "firstname": "Valentin",
+    "lastname": "HIPPOLYTE",
+    "download": "Download",
+    "cv": "my cv"
   }
 }
