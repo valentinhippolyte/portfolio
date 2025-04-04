@@ -1,7 +1,7 @@
-<script setup></script>
-
 <template>
-  <h1>Hello Portfolio</h1>
+  <HomeScreen />
 </template>
 
-<style scoped></style>
+<script setup>
+import HomeScreen from "./screens/HomeScreen.vue";
+</script>
