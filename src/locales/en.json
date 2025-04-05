@@ -10,5 +10,15 @@
     "firstname": "Valentin",
     "lastname": "HIPPOLYTE",
     "cv": "my cv"
+  },
+  "aboutMe": {
+    "title1": "ABOUT",
+    "title2": "ME",
+    "who": "WHO AM I?",
+    "skills": "SKILLS",
+    "presentation1": "Hello, my name is Valentin HIPPOLYTE, a motivated and dynamic developer with a Master’s degree in Computer Engineering.",
+    "presentation2": "After three years of apprenticeship at Worldline, where I developed features for international banking clients, I am now looking for a new professional challenge.",
+    "languages": "Languages & Frameworks:",
+    "tools": "Tools & Workflow:"
   }
 }

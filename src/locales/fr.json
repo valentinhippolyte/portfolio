@@ -10,5 +10,15 @@
     "firstname": "Valentin",
     "lastname": "HIPPOLYTE",
     "cv": "mon cv"
+  },
+  "aboutMe": {
+    "title1": "À PROPOS",
+    "title2": "DE MOI",
+    "who": "QUI SUIS-JE ?",
+    "skills": "Compétences",
+    "presentation1": "Bonjour, je m'appelle Valentin HIPPOLYTE, un développeur motivé et dynamique, titulaire d'un Master en Génie Informatique.",
+    "presentation2": "Après trois années d'alternance chez Worldline, où j'ai développé des fonctionnalités pour des clients bancaires internationaux, je suis maintenant à la recherche d'un nouveau défi professionnel.",
+    "languages": "Langages et Frameworks:",
+    "tools": "Outils et Workflow:"
   }
 }
