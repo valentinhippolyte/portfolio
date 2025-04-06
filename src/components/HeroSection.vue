@@ -25,7 +25,7 @@
         >
           <div class="flex justify-between items-center w-full">
             <div
-              class="size-10 rounded-full overflow-hidden flex items-center bg-white p-2"
+              class="size-10 rounded-full overflow-hidden flex items-center bg-white p-2 transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@
             </div>
 
             <div
-              class="size-10 rounded-full overflow-hidden flex justify-center items-center bg-white p-1.5"
+              class="size-10 rounded-full overflow-hidden flex justify-center items-center bg-white p-1.5 transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@
             </div>
 
             <div
-              class="size-10 rounded-full overflow-hidden flex justify-center items-center bg-white p-1.5"
+              class="size-10 rounded-full overflow-hidden flex justify-center items-center bg-white p-1.5 transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@
             >
               <button
                 type="button"
-                class="text-white bg-app-green hover:bg-app-green-600 hover:cursor-pointer rounded-2xl text-sm px-3 py-2 text-center inline-flex items-center"
+                class="text-white bg-app-green hover:bg-app-green-600 hover:scale-105 transition-all duration-300 ease-in-out hover:cursor-pointer rounded-2xl text-sm px-3 py-2 text-center inline-flex items-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
