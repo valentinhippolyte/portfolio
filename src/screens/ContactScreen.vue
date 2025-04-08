@@ -1,12 +1,12 @@
 <template>
-  <section id="about" class="bg-app-second-bg">
+  <section id="contact" class="bg-app-second-bg">
     <Title
       :firstTitle="t('contactMe.title1')"
       :secondTitle="t('contactMe.title2')"
     />
 
     <div
-      class="flex flex-col gap-16 lg:flex-row lg:justify-around pt-16 md:pt-26 lg:pt-40"
+      class="flex flex-col gap-16 px-14 lg:flex-row lg:justify-around pt-16 md:pt-26 lg:pt-40"
     >
       <div
         class="flex flex-col sm:flex-row justify-around items-center gap-10 w-full"
@@ -40,11 +40,11 @@
               </svg>
             </div>
             <!-- Title -->
-            <p class="text-2xl text-white font-bold">
+            <p class="text-xl text-white font-bold">
               {{ t("contactMe.phone.title") }}
             </p>
             <!-- value -->
-            <p class="text-xl text-white">{{ t("contactMe.phone.value") }}</p>
+            <p class="text-lg text-white">{{ t("contactMe.phone.value") }}</p>
           </div>
         </a>
 
@@ -76,11 +76,11 @@
               </svg>
             </div>
             <!-- Title -->
-            <p class="text-2xl text-white font-bold">
+            <p class="text-xl text-white font-bold">
               {{ t("contactMe.email.title") }}
             </p>
             <!-- value -->
-            <p class="text-xl text-white">{{ t("contactMe.email.value") }}</p>
+            <p class="text-lg text-white">{{ t("contactMe.email.value") }}</p>
           </div>
         </a>
       </div>
@@ -119,18 +119,18 @@
             </svg>
           </div>
           <!-- Title -->
-          <p class="text-2xl text-white font-bold">
+          <p class="text-xl text-white font-bold">
             {{ t("contactMe.address.title") }}
           </p>
           <!-- value -->
-          <p class="text-xl text-white">{{ t("contactMe.address.value") }}</p>
+          <p class="text-lg text-white">{{ t("contactMe.address.value") }}</p>
         </div>
 
         <!-- Socials part -->
         <div
           class="flex flex-col items-center gap-10 mb-10 w-full sm:w-1/2 lg:w-1/2"
         >
-          <h4 class="text-2xl font-bold text-app-orange">
+          <h4 class="text-xl font-bold text-app-orange">
             {{ t("contactMe.follow") }}
             <span class="text-white">{{ t("contactMe.me") }}</span>
           </h4>
@@ -192,10 +192,13 @@
       </div>
     </div>
   </section>
+
+  <Rights />
 </template>
 
 <script setup>
 import { useI18n } from "vue-i18n";
+import Rights from "../components/Rights.vue";
 import Title from "../components/title.vue";
 
 const { t } = useI18n();
