@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-app-first-bg">
+  <section class="bg-app-first-bg">
     <Nav />
     <HeroSection />
-  </div>
+  </section>
 </template>
 
 <script setup>

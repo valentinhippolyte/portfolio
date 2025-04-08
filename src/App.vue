@@ -1,6 +1,8 @@
 <template>
-  <HomeScreen />
-  <AboutMeScreen />
+  <div class="scroll-smooth">
+    <HomeScreen />
+    <AboutMeScreen />
+  </div>
 </template>
 
 <script setup>

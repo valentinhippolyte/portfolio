@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-app-second-bg">
+  <section id="about" class="bg-app-second-bg">
     <Title
       :firstTitle="t('aboutMe.title1')"
       :secondTitle="t('aboutMe.title2')"
@@ -60,7 +60,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
