@@ -20,5 +20,23 @@
     "presentation2": "After three years of apprenticeship at Worldline, where I developed features for international banking clients, I am now looking for a new professional challenge.",
     "languages": "Languages & Frameworks:",
     "tools": "Tools & Workflow:"
+  },
+  "contactMe": {
+    "title1": "CONTACT",
+    "title2": "ME",
+    "phone": {
+      "title": "Phone",
+      "value": "+33 6 61 08 62 20"
+    },
+    "email": {
+      "title": "Email",
+      "value": "valentin.hippolyte@outlook.fr"
+    },
+    "address": {
+      "title": "Address",
+      "value": "Montpellier and around"
+    },
+    "follow": "Follow",
+    "me": "me"
   }
 }

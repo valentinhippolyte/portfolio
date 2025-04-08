@@ -20,5 +20,23 @@
     "presentation2": "Après trois années d'alternance chez Worldline, où j'ai développé des fonctionnalités pour des clients bancaires internationaux, je suis maintenant à la recherche d'un nouveau défi professionnel.",
     "languages": "Langages et Frameworks:",
     "tools": "Outils et Workflow:"
+  },
+  "contactMe": {
+    "title1": "CONTACTE",
+    "title2": "MOI",
+    "phone": {
+      "title": "Téléphone",
+      "value": "06 61 08 62 20"
+    },
+    "email": {
+      "title": "Mail",
+      "value": "valentin.hippolyte@outlook.fr"
+    },
+    "address": {
+      "title": "Adresse",
+      "value": "Montpellier et alentours"
+    },
+    "follow": "Suis",
+    "me": "moi"
   }
 }
