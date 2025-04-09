@@ -21,6 +21,15 @@
     "languages": "Languages & Frameworks:",
     "tools": "Tools & Workflow:"
   },
+  "projects": {
+    "title1": "SOME",
+    "title2": "PROJECTS",
+    "description": {
+      "casa": "A showcase site for a vacation home in Andalusia with an integrated booking system.",
+      "ghiblix": "An app to discover and manage Ghibli films: add to favorites, track views, and explore films.",
+      "dailyTracker": "A tool to track daily tasks and goals, designed to improve efficiency and productivity."
+    }
+  },
   "contactMe": {
     "title1": "CONTACT",
     "title2": "ME",
@@ -28,9 +37,8 @@
       "title": "Phone",
       "value": "+33 6 61 08 62 20"
     },
-    "email": {
-      "title": "Email",
-      "value": "valentin.hippolyte@outlook.fr"
+    "mail": {
+      "title": "Email"
     },
     "address": {
       "title": "Address",

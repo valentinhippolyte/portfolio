@@ -16,10 +16,19 @@
     "title2": "DE MOI",
     "who": "QUI SUIS-JE ?",
     "skills": "Compétences",
-    "presentation1": "Bonjour, je m'appelle Valentin HIPPOLYTE, un développeur motivé et dynamique, titulaire d'un Master en Génie Informatique.",
+    "presentation1": "Bonjour, je m'appelle Valentin HIPPOLYTE, un développeur motivé et dynamique, titulaire d'un Master Expert en ingénierie informatique.",
     "presentation2": "Après trois années d'alternance chez Worldline, où j'ai développé des fonctionnalités pour des clients bancaires internationaux, je suis maintenant à la recherche d'un nouveau défi professionnel.",
     "languages": "Langages et Frameworks:",
     "tools": "Outils et Workflow:"
+  },
+  "projects": {
+    "title1": "QUELQUES",
+    "title2": "PROJETS",
+    "description": {
+      "casa": "Un site vitrine pour une maison de vacances en Andalousie avec un système de réservation intégré.",
+      "ghiblix": "Une application pour découvrir et gérer les films des studios Ghibli : ajout aux favoris, suivi de vue et exploration des films.",
+      "dailyTracker": "Un outil pour suivre ses tâches quotidiennes et ses objectifs, conçu pour améliorer l'efficacité et la productivité."
+    }
   },
   "contactMe": {
     "title1": "CONTACTE",
@@ -28,9 +37,8 @@
       "title": "Téléphone",
       "value": "06 61 08 62 20"
     },
-    "email": {
-      "title": "Mail",
-      "value": "valentin.hippolyte@outlook.fr"
+    "mail": {
+      "title": "Mail"
     },
     "address": {
       "title": "Adresse",
