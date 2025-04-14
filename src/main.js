@@ -9,9 +9,11 @@ import { routes } from "./routes.js";
 import en from "./locales/en.json";
 import fr from "./locales/fr.json";
 
+const savedLanguage = localStorage.getItem("lang") || "en";
+
 const i18n = createI18n({
   legacy: false,
-  locale: "en",
+  locale: savedLanguage,
   fallbackLocale: "en",
   messages: {
     en,
@@ -22,6 +24,9 @@ const i18n = createI18n({
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 };
+  },
 });
 
 const app = createApp(App);

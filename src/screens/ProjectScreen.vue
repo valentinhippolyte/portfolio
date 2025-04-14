@@ -57,7 +57,11 @@
               &nbsp; github
             </button>
           </a>
-          <a :href="currentProject?.github" target="_blank">
+          <a
+            v-if="currentProject?.site"
+            :href="currentProject?.github"
+            target="_blank"
+          >
             <button
               type="button"
               class="text-white bg-app-green hover:bg-app-green-600 hover:scale-105 transition-all duration-300 ease-in-out hover:cursor-pointer rounded-2xl text-sm px-3 py-2 text-center inline-flex items-center"
@@ -136,10 +140,10 @@
     <!-- Retour à l'accueil -->
     <div class="mt-6 text-center">
       <router-link
-        to="/#projects"
+        to="/"
         class="inline-block bg-app-green text-white px-5 py-2 rounded-2xl hover:bg-app-green-600 transition-all"
       >
-        Retour aux projets
+        Retour au profil
       </router-link>
     </div>
   </section>
@@ -195,8 +199,7 @@ const projects = [
     id: "casa-cal-y-sol",
     firstTitle: "Casa",
     secondTitle: "Cal Y Sol",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+    description: t("projects.project-info.casa-cal-y-sol.description"),
     image: new URL("../assets/portfolio/casaCalYSol.jpg", import.meta.url).href,
     stacks: [
       { skillName: "Vue.js", image: images.vue },
@@ -207,54 +210,57 @@ const projects = [
     site: "link",
 
     features: [
-      "Description of Feature 1",
-      "Description of Feature 2",
-      "Description of Feature 3",
+      t("projects.project-info.casa-cal-y-sol.features.1"),
+      t("projects.project-info.casa-cal-y-sol.features.2"),
+      t("projects.project-info.casa-cal-y-sol.features.3"),
+      t("projects.project-info.casa-cal-y-sol.features.4"),
     ],
-    challenges: "Description of Challenge",
+    challenges: t("projects.project-info.casa-cal-y-sol.challenge"),
   },
   {
     id: "ghiblix",
     firstTitle: "Ghiblix",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
-    image: new URL("../assets/portfolio/casaCalYSol.jpg", import.meta.url).href,
+    description: t("projects.project-info.ghiblix.description"),
+    image: new URL("../assets/portfolio/ghiblix.png", import.meta.url).href,
     stacks: [
       { skillName: "Vue.js", image: images.vue },
-      { skillName: "TypeScript", image: images.ts },
-      { skillName: "Figma", image: images.figma },
+      { skillName: "Tailwind", image: images.tailwind },
+      { skillName: "Node.js", image: images.node },
+      { skillName: "Git", image: images.git },
     ],
     github: "link",
     site: "link",
 
     features: [
-      "Description of Feature 1",
-      "Description of Feature 2",
-      "Description of Feature 3",
+      t("projects.project-info.ghiblix.features.1"),
+      t("projects.project-info.ghiblix.features.2"),
+      t("projects.project-info.ghiblix.features.3"),
+      t("projects.project-info.ghiblix.features.4"),
     ],
-    challenges: "Description of Challenge",
+    challenges: t("projects.project-info.ghiblix.challenge"),
   },
   {
     id: "daily-tracker",
     firstTitle: "Daily",
     secondTitle: "Tracker",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
-    image: new URL("../assets/portfolio/casaCalYSol.jpg", import.meta.url).href,
+    description: t("projects.project-info.daily-tracker.description"),
+    image: new URL("../assets/portfolio/dailyTracker.png", import.meta.url)
+      .href,
     stacks: [
       { skillName: "Vue.js", image: images.vue },
-      { skillName: "TypeScript", image: images.ts },
-      { skillName: "Figma", image: images.figma },
+      { skillName: "Tailwind", image: images.tailwind },
+      { skillName: "Node.js", image: images.node },
+      { skillName: "Git", image: images.git },
     ],
     github: "link",
-    site: "link",
 
     features: [
-      "Description of Feature 1",
-      "Description of Feature 2",
-      "Description of Feature 3",
+      t("projects.project-info.daily-tracker.features.1"),
+      t("projects.project-info.daily-tracker.features.2"),
+      t("projects.project-info.daily-tracker.features.3"),
+      t("projects.project-info.daily-tracker.features.4"),
     ],
-    challenges: "Description of Challenge",
+    challenges: t("projects.project-info.daily-tracker.challenge"),
   },
 ];
 </script>

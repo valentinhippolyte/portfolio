@@ -28,6 +28,38 @@
       "casa-cal-y-sol": "A showcase site for a vacation home in Andalusia with an integrated booking system.",
       "ghiblix": "An app to discover and manage Ghibli films: add to favorites, track views, and explore films.",
       "daily-tracker": "A tool to track daily tasks and goals, designed to improve efficiency and productivity."
+    },
+    "project-info": {
+      "casa-cal-y-sol": {
+        "description": "Casa Cal y Sol is a showcase website I'm building for my parents, who fulfilled their dream of moving to a white village in Andalusia. The site allows visitors to explore their holiday home, check availability, and book a stay in a warm and authentic atmosphere.",
+        "features": {
+          "1": "House presentation with an image gallery",
+          "2": "Availability calendar synchronized with Smoobu",
+          "3": "Contact and booking form",
+          "4": "Multilingual version with translation management (Vue I18n)"
+        },
+        "challenge": "Integrating and customizing the Smoobu API to display a synced calendar without using their default widget helped me deepen my understanding of third-party API integration and the importance of user experience in a project aimed at non-tech users."
+      },
+      "ghiblix": {
+        "description": "Ghiblix is a Full Stack app I developed for a friend who’s a big Studio Ghibli fan — and for myself to discover its films and track the ones I've already watched. The goal: offer a simple and elegant interface to browse the studio's works, view film details, and mark those you’ve seen.",
+        "features": {
+          "1": "Complete list of Studio Ghibli movies, with posters, titles, and summaries",
+          "2": "Ability to mark movies as 'watched' to track your progress",
+          "3": "Detailed movie pages with description, release date, director, etc.",
+          "4": "Sign up / login with JWT to manage a personal profile and save your data"
+        },
+        "challenge": "One of the challenges was managing user state (watched movies) in a secure and persistent way. I implemented JWT authentication and a REST API to let users access their personal watchlist. This project helped me structure a full Full Stack architecture (front, back, DB) and practice a solid Git workflow, even solo."
+      },
+      "daily-tracker": {
+        "description": "Daily Tracker is a minimalist app I created to track my daily routines in a quick and simple way. I wanted a lightweight, functional, and pleasant tool — like a digital daily notebook. It's aimed at anyone who wants to keep track of habits without getting lost in too many features.",
+        "features": {
+          "1": "Create simple habits (todo items)",
+          "2": "Mark habits as completed in one click",
+          "3": "JWT-based authentication",
+          "4": "Responsive UI built with Vue.js + Tailwind"
+        },
+        "challenge": "I strengthened my understanding of JWT authentication and user state management in a Vue.js app, giving me a solid foundation for other projects with auth."
+      }
     }
   },
   "contactMe": {

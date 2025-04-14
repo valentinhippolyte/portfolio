@@ -30,8 +30,11 @@
 import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 
-const selectedLanguage = ref("en"); // Default language is 'en'
 const { locale } = useI18n();
+
+const savedLanguage = localStorage.getItem("lang") || "en";
+const selectedLanguage = ref(savedLanguage);
+locale.value = savedLanguage;
 
 const toggleLanguage = (language) => {
   selectedLanguage.value = language;
