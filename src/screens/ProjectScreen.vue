@@ -1,8 +1,8 @@
 <template>
-  <section id="about" class="bg-app-second-bg px-6 py-16">
+  <section class="bg-app-second-bg px-6">
     <Title
-      :firstTitle="currentProject.firstTitle"
-      :secondTitle="currentProject.secondTitle"
+      :firstTitle="currentProject?.firstTitle"
+      :secondTitle="currentProject?.secondTitle"
     />
 
     <div
@@ -20,8 +20,16 @@
       <!-- Texte -->
       <div class="w-full md:w-1/2 text-white space-y-4 text-justify">
         <p class="text-base md:text-lg leading-relaxed">
-          {{ currentProject.description }}
+          {{ currentProject?.description }}
         </p>
+
+        <div class="flex items-center gap-4 flex-wrap">
+          <Skill
+            v-for="skill in currentProject?.stacks"
+            :src="skill.image"
+            :skillName="skill.skillName"
+          />
+        </div>
 
         <div class="flex gap-5">
           <a :href="currentProject?.github" target="_blank">
@@ -77,33 +85,110 @@
       </div>
     </div>
 
-    <!-- Features -->
-    <div class="max-w-2xl flex-1 text-white">
-      <h3 class="text-2xl font-bold pb-3">Main features</h3>
-      <ul
-        class="list-disc list-inside marker:text-app-green space-y-2 text-base sm:text-xl"
+    <!-- Features & Challenges -->
+    <div
+      class="flex flex-col lg:flex-row items-center justify-between gap-10 mt-10 max-w-6xl mx-auto"
+    >
+      <!-- Features -->
+      <div class="w-full md:w-1/2 lg:w-1/2 text-white">
+        <h3 class="text-2xl font-bold pb-3">Main Features</h3>
+        <ul
+          class="list-disc list-inside marker:text-app-green space-y-2 text-base sm:text-xl"
+        >
+          <li v-for="feature in currentProject?.features" :key="feature">
+            {{ feature }}
+          </li>
+        </ul>
+      </div>
+
+      <!-- Challenges -->
+      <div
+        class="w-full md:w-1/2 lg:w-1/2 text-white self-center lg:self-start"
       >
-        <li v-for="feature in currentProject.features" :key="feature">
-          {{ feature }}
-        </li>
-      </ul>
+        <h3 class="text-2xl font-bold pb-3">Défis techniques</h3>
+        <p class="text-base sm:text-lg leading-relaxed">
+          {{ currentProject?.challenges }}
+        </p>
+      </div>
+    </div>
+
+    <!-- Navigation entre projets -->
+    <div
+      class="mt-16 flex justify-between items-center max-w-6xl mx-auto text-white"
+    >
+      <router-link
+        v-if="prevProject"
+        :to="`/projects/${prevProject.id}`"
+        class="hover:underline text-white"
+      >
+        ← {{ prevProject.firstTitle }} {{ prevProject.secondTitle || "" }}
+      </router-link>
+
+      <router-link
+        v-if="nextProject"
+        :to="`/projects/${nextProject.id}`"
+        class="hover:underline text-white ml-auto"
+      >
+        {{ nextProject.firstTitle }} {{ nextProject.secondTitle || "" }} →
+      </router-link>
+    </div>
+
+    <!-- Retour à l'accueil -->
+    <div class="mt-6 text-center">
+      <router-link
+        to="/#projects"
+        class="inline-block bg-app-green text-white px-5 py-2 rounded-2xl hover:bg-app-green-600 transition-all"
+      >
+        Retour aux projets
+      </router-link>
     </div>
   </section>
+
+  <Rights />
 </template>
 
 <script setup>
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
 import { useRoute } from "vue-router";
+import Rights from "../components/Rights.vue";
+import Skill from "../components/Skill.vue";
 import Title from "../components/title.vue";
 
 const { t } = useI18n();
 
 const route = useRoute();
 
-const projectId = route.params.id;
+const projectId = computed(() => route.params.id);
 
-const currentProject = computed(() => projects.find((p) => p.id === projectId));
+const currentProject = computed(() =>
+  projects.find((p) => p.id === projectId.value)
+);
+
+const images = {
+  vue: new URL("../assets/skills/vuejs.png", import.meta.url).href,
+  ts: new URL("../assets/skills/typeScript.png", import.meta.url).href,
+  tailwind: new URL("../assets/skills/tailwind.png", import.meta.url).href,
+  node: new URL("../assets/skills/node.png", import.meta.url).href,
+  sql: new URL("../assets//skills/sql.png", import.meta.url).href,
+  figma: new URL("../assets/skills/figma.png", import.meta.url).href,
+  git: new URL("../assets/skills/git.png", import.meta.url).href,
+  docker: new URL("../assets/skills/docker.png", import.meta.url).href,
+  jira: new URL("../assets/skills/jira.png", import.meta.url).href,
+};
+const currentIndex = computed(() =>
+  projects.findIndex((p) => p.id === projectId.value)
+);
+
+const prevProject = computed(() =>
+  currentIndex.value > 0 ? projects[currentIndex.value - 1] : null
+);
+
+const nextProject = computed(() =>
+  currentIndex.value < projects.length - 1
+    ? projects[currentIndex.value + 1]
+    : null
+);
 
 const projects = [
   {
@@ -113,46 +198,40 @@ const projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
     image: new URL("../assets/portfolio/casaCalYSol.jpg", import.meta.url).href,
-    stacks: {
-      "Stack 1": "Stack 1",
-      "Stack 2": "Stack 2",
-      "Stack 3": "Stack 3",
-      "Stack 4": "Stack 4",
-    },
+    stacks: [
+      { skillName: "Vue.js", image: images.vue },
+      { skillName: "TypeScript", image: images.ts },
+      { skillName: "Figma", image: images.figma },
+    ],
     github: "link",
     site: "link",
 
-    features: {
-      1: "Description of Feature 1",
-      2: "Description of Feature 2",
-      3: "Description of Feature 3",
-      4: "Description of Feature 4",
-    },
+    features: [
+      "Description of Feature 1",
+      "Description of Feature 2",
+      "Description of Feature 3",
+    ],
     challenges: "Description of Challenge",
   },
   {
     id: "ghiblix",
     firstTitle: "Ghiblix",
-    secondTitle: "",
-    name: "Ghiblix",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
-    image: new URL("../assets/portfolio/ghiblix.png", import.meta.url).href,
-    stacks: {
-      "Stack 1": "Stack 1",
-      "Stack 2": "Stack 2",
-      "Stack 3": "Stack 3",
-      "Stack 4": "Stack 4",
-    },
+    image: new URL("../assets/portfolio/casaCalYSol.jpg", import.meta.url).href,
+    stacks: [
+      { skillName: "Vue.js", image: images.vue },
+      { skillName: "TypeScript", image: images.ts },
+      { skillName: "Figma", image: images.figma },
+    ],
     github: "link",
     site: "link",
 
-    features: {
-      "Feature 1": "Description of Feature 1",
-      "Feature 2": "Description of Feature 2",
-      "Feature 3": "Description of Feature 3",
-      "Feature 4": "Description of Feature 4",
-    },
+    features: [
+      "Description of Feature 1",
+      "Description of Feature 2",
+      "Description of Feature 3",
+    ],
     challenges: "Description of Challenge",
   },
   {
@@ -161,23 +240,20 @@ const projects = [
     secondTitle: "Tracker",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
-    image: new URL("../assets/portfolio/dailyTracker.png", import.meta.url)
-      .href,
-    stacks: {
-      "Stack 1": "Stack 1",
-      "Stack 2": "Stack 2",
-      "Stack 3": "Stack 3",
-      "Stack 4": "Stack 4",
-    },
+    image: new URL("../assets/portfolio/casaCalYSol.jpg", import.meta.url).href,
+    stacks: [
+      { skillName: "Vue.js", image: images.vue },
+      { skillName: "TypeScript", image: images.ts },
+      { skillName: "Figma", image: images.figma },
+    ],
     github: "link",
     site: "link",
 
-    features: {
-      "Feature 1": "Description of Feature 1",
-      "Feature 2": "Description of Feature 2",
-      "Feature 3": "Description of Feature 3",
-      "Feature 4": "Description of Feature 4",
-    },
+    features: [
+      "Description of Feature 1",
+      "Description of Feature 2",
+      "Description of Feature 3",
+    ],
     challenges: "Description of Challenge",
   },
 ];

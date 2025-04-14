@@ -1,7 +1,8 @@
 <template>
   <div class="relative group">
     <div
-      class="size-12 rounded-full overflow-hidden flex justify-center items-center bg-white p-1.5 cursor-pointer"
+      :class="`${size}`"
+      class="rounded-full overflow-hidden flex justify-center items-center bg-white p-1.5 cursor-pointer"
     >
       <img :src="src" alt="Skill icon" class="w-7 h-7 object-cover" />
     </div>
@@ -19,5 +20,9 @@
 defineProps({
   src: String,
   skillName: String,
+  size: {
+    type: String,
+    default: "size-12",
+  },
 });
 </script>

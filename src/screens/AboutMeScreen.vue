@@ -75,7 +75,6 @@ import Title from "../components/title.vue";
 
 const { t } = useI18n();
 
-// Exemple d'objet images si tu l'utilises dans <script setup>
 const images = {
   vue: new URL("../assets/skills/vuejs.png", import.meta.url).href,
   ts: new URL("../assets/skills/typeScript.png", import.meta.url).href,
