@@ -25,9 +25,9 @@
     "title1": "QUELQUES",
     "title2": "PROJETS",
     "description": {
-      "casa": "Un site vitrine pour une maison de vacances en Andalousie avec un système de réservation intégré.",
+      "casa-cal-y-sol": "Un site vitrine pour une maison de vacances en Andalousie avec un système de réservation intégré.",
       "ghiblix": "Une application pour découvrir et gérer les films des studios Ghibli : ajout aux favoris, suivi de vue et exploration des films.",
-      "dailyTracker": "Un outil pour suivre ses tâches quotidiennes et ses objectifs, conçu pour améliorer l'efficacité et la productivité."
+      "daily-tracker": "Un outil pour suivre ses tâches quotidiennes et ses objectifs, conçu pour améliorer l'efficacité et la productivité."
     }
   },
   "contactMe": {

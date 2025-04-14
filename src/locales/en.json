@@ -25,9 +25,9 @@
     "title1": "SOME",
     "title2": "PROJECTS",
     "description": {
-      "casa": "A showcase site for a vacation home in Andalusia with an integrated booking system.",
+      "casa-cal-y-sol": "A showcase site for a vacation home in Andalusia with an integrated booking system.",
       "ghiblix": "An app to discover and manage Ghibli films: add to favorites, track views, and explore films.",
-      "dailyTracker": "A tool to track daily tasks and goals, designed to improve efficiency and productivity."
+      "daily-tracker": "A tool to track daily tasks and goals, designed to improve efficiency and productivity."
     }
   },
   "contactMe": {
