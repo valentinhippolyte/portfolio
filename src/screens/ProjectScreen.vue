@@ -148,7 +148,7 @@
                 <path d="M16 12H8" />
                 <path d="m12 8-4 4 4 4" />
               </svg>
-              {{ "previous" || "" }}
+              previous
             </div>
           </router-link>
         </div>
@@ -171,7 +171,7 @@
             class="hover:underline text-white"
           >
             <div class="flex justify-end gap-1">
-              {{ "next" || "" }}
+              next
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
