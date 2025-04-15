@@ -63,7 +63,7 @@
             </a>
             <a
               v-if="currentProject?.site"
-              :href="currentProject?.github"
+              :href="currentProject?.site"
               target="_blank"
             >
               <button
@@ -278,8 +278,8 @@ const projects = [
       { skillName: "Node.js", image: images.node },
       { skillName: "Git", image: images.git },
     ],
-    github: "link",
-    site: "link",
+    github: "https://github.com/valentinhippolyte/Ghiblix/",
+    site: "https://ghiblix-seven.vercel.app/",
 
     features: [
       t("projects.project-info.ghiblix.features.1"),
@@ -302,7 +302,7 @@ const projects = [
       { skillName: "Node.js", image: images.node },
       { skillName: "Git", image: images.git },
     ],
-    github: "link",
+    github: "https://github.com/valentinhippolyte/DailyTrack",
 
     features: [
       t("projects.project-info.daily-tracker.features.1"),
