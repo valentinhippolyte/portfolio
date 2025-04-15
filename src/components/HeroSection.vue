@@ -99,7 +99,11 @@
           </div>
           <div class="flex justify-center sm:justify-end w-full">
             <a
-              href="../assets/cv.pdf"
+              :href="
+                currentLocale === 'en'
+                  ? '../assets/cv_en.pdf'
+                  : '../assets/cv_fr.pdf'
+              "
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -134,7 +138,12 @@
 </template>
 
 <script setup>
+import { computed } from "vue";
 import { useI18n } from "vue-i18n";
+
+const { locale } = useI18n();
+
+const currentLocale = computed(() => locale.value);
 
 const { t } = useI18n();
 </script>

@@ -99,7 +99,9 @@
       >
         <!-- Features -->
         <div class="w-full md:w-2/3 lg:w-1/2 text-white">
-          <h3 class="text-2xl font-bold pb-3">Main Features</h3>
+          <h3 class="text-2xl font-bold pb-3">
+            {{ t("projects.project-info.main_features") }}
+          </h3>
           <ul
             class="list-disc list-outside pl-4 marker:text-app-green space-y-2 text-base sm:text-xl"
           >
@@ -113,7 +115,9 @@
         <div
           class="w-full md:w-2/3 lg:w-1/2 text-white self-center lg:self-start"
         >
-          <h3 class="text-2xl font-bold pb-3">Défis techniques</h3>
+          <h3 class="text-2xl font-bold pb-3">
+            {{ t("projects.project-info.challenges") }}
+          </h3>
           <p class="text-base sm:text-lg leading-relaxed">
             {{ currentProject?.challenges }}
           </p>
@@ -148,7 +152,7 @@
                 <path d="M16 12H8" />
                 <path d="m12 8-4 4 4 4" />
               </svg>
-              previous
+              {{ t("projects.project-info.previous") }}
             </div>
           </router-link>
         </div>
@@ -159,7 +163,7 @@
             to="/"
             class="inline-block bg-app-green text-white px-5 py-2 rounded-2xl hover:bg-app-green-600 transition-all"
           >
-            profil
+            {{ t("projects.project-info.profile") }}
           </router-link>
         </div>
 
@@ -171,7 +175,7 @@
             class="hover:underline text-white"
           >
             <div class="flex justify-end gap-1">
-              next
+              {{ t("projects.project-info.next") }}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"

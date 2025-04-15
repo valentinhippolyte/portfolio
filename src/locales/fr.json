@@ -59,7 +59,12 @@
           "4": "Interface responsive en Vue.js + Tailwind"
         },
         "challenge": "J’ai pu consolider ma compréhension de l’authentification avec JWT et la gestion de l’état utilisateur dans une app Vue.js, ce qui m’a donné une base solide pour d’autres projets avec authentification."
-      }
+      },
+      "main_features": "Fonctionnalités principales",
+      "challenges": "Défis",
+      "previous": "précédent",
+      "next": "suivant",
+      "profile": "profil"
     }
   },
   "contactMe": {

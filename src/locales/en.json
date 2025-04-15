@@ -59,7 +59,12 @@
           "4": "Responsive UI built with Vue.js + Tailwind"
         },
         "challenge": "I strengthened my understanding of JWT authentication and user state management in a Vue.js app, giving me a solid foundation for other projects with auth."
-      }
+      },
+      "main_features": "Main Features",
+      "challenges": "Challenges",
+      "previous": "previous",
+      "next": "next",
+      "profile": "profile"
     }
   },
   "contactMe": {
