@@ -17,7 +17,7 @@
           <img
             :src="currentProject?.image"
             class="rounded-xl object-cover shadow-lg max-w-full h-auto sm:h-72 md:h-80 lg:h-96"
-            alt="Project Image"
+            :alt="currentProject.id"
           />
         </div>
 
@@ -36,7 +36,11 @@
           </div>
 
           <div class="flex gap-5">
-            <a :href="currentProject?.github" target="_blank">
+            <a
+              :href="currentProject?.github"
+              target="_blank"
+              aria-label="Github"
+            >
               <button
                 type="button"
                 class="text-white bg-app-green hover:bg-app-green-600 hover:scale-105 transition-all duration-300 ease-in-out hover:cursor-pointer rounded-2xl text-sm px-3 py-2 text-center inline-flex items-center"
@@ -65,6 +69,7 @@
               v-if="currentProject?.site"
               :href="currentProject?.site"
               target="_blank"
+              aria-label="Site"
             >
               <button
                 type="button"
@@ -99,9 +104,9 @@
       >
         <!-- Features -->
         <div class="w-full md:w-2/3 lg:w-1/2 text-white">
-          <h3 class="text-2xl font-bold pb-3">
+          <p class="text-2xl font-bold pb-3">
             {{ t("projects.project-info.main_features") }}
-          </h3>
+          </p>
           <ul
             class="list-disc list-outside pl-4 marker:text-app-green space-y-2 text-base sm:text-xl"
           >
@@ -115,9 +120,9 @@
         <div
           class="w-full md:w-2/3 lg:w-1/2 text-white self-center lg:self-start"
         >
-          <h3 class="text-2xl font-bold pb-3">
+          <p class="text-2xl font-bold pb-3">
             {{ t("projects.project-info.challenges") }}
-          </h3>
+          </p>
           <p class="text-base sm:text-lg leading-relaxed">
             {{ currentProject?.challenges }}
           </p>

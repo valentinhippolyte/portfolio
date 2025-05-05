@@ -20,6 +20,7 @@
             href="tel:+33661086220"
             target="_blank"
             class="w-full sm:w-1/2 lg:w-1/2"
+            aria-label="Phone"
           >
             <div class="flex flex-col items-center gap-4 mb-10">
               <!-- Icon -->
@@ -57,6 +58,7 @@
             href="mailto:valentin.hippolyte@outlook.fr"
             target="_blank"
             class="w-full sm:w-1/2 lg:w-1/2"
+            aria-label="Email"
           >
             <div class="flex flex-col items-center gap-4 mb-10">
               <!-- Icon -->
@@ -134,15 +136,16 @@
           <div
             class="flex flex-col items-center gap-10 mb-10 w-full sm:w-1/2 lg:w-1/2"
           >
-            <h4 class="text-xl font-bold text-app-orange">
+            <p class="text-xl font-bold text-app-orange">
               {{ t("contactMe.follow") }}
               <span class="text-white">{{ t("contactMe.me") }}</span>
-            </h4>
+            </p>
             <div class="flex gap-5">
               <!-- Icon -->
               <a
                 href="https://www.linkedin.com/in/valentin-hippolyte/"
                 target="_blank"
+                aria-label="LinkedIn"
               >
                 <div
                   class="size-12 rounded-full overflow-hidden flex items-center bg-white p-2 transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:cursor-pointer"
@@ -168,7 +171,11 @@
                 </div>
               </a>
               <!-- Icon -->
-              <a href="https://github.com/valentinhippolyte" target="_blank">
+              <a
+                href="https://github.com/valentinhippolyte"
+                target="_blank"
+                aria-label="GitHub"
+              >
                 <div
                   class="size-12 rounded-full overflow-hidden flex items-center bg-white p-2 transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:cursor-pointer"
                 >

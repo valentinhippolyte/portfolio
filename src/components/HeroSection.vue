@@ -5,6 +5,7 @@
         <img
           src="../assets/photo.jpg"
           class="size-48 sm:size-60 md:size-72 rounded-full"
+          alt="Valentin Hippolyte"
         />
       </div>
 
@@ -24,7 +25,11 @@
           class="flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-0 mt-2"
         >
           <div class="flex justify-between items-center w-full">
-            <a href="mailto:valentin.hippolyte@outlook.fr" target="_blank">
+            <a
+              href="mailto:valentin.hippolyte@outlook.fr"
+              target="_blank"
+              aria-label="Email"
+            >
               <div
                 class="size-10 rounded-full overflow-hidden flex items-center bg-white p-2 transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:cursor-pointer"
               >
@@ -49,6 +54,7 @@
             <a
               href="https://www.linkedin.com/in/valentin-hippolyte/"
               target="_blank"
+              aria-label="LinkedIn"
             >
               <div
                 class="size-10 rounded-full overflow-hidden flex justify-center items-center bg-white p-1.5 transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:cursor-pointer"
@@ -73,7 +79,11 @@
                 </svg>
               </div>
             </a>
-            <a href="https://github.com/valentinhippolyte" target="_blank">
+            <a
+              href="https://github.com/valentinhippolyte"
+              target="_blank"
+              aria-label="GitHub"
+            >
               <div
                 class="size-10 rounded-full overflow-hidden flex justify-center items-center bg-white p-1.5 transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:cursor-pointer"
               >
@@ -106,6 +116,7 @@
               "
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Download CV"
             >
               <button
                 type="button"

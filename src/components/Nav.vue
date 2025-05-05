@@ -8,7 +8,7 @@
           :key="link.key"
           class="text-base sm:text-xl text-white font-bold relative group cursor-pointer transition-colors duration-300 hover:text-app-green"
         >
-          <a :href="'#' + link.key" class="block">
+          <a :href="'#' + link.key" class="block" :aria-label="link.label">
             {{ t(link.label) }}
           </a>
           <span
