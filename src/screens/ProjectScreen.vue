@@ -220,8 +220,8 @@ const currentProject = computed(() =>
 );
 
 const images = {
-  vue: new URL("../assets/skills/vuejs.png", import.meta.url).href,
-  ts: new URL("../assets/skills/typeScript.png", import.meta.url).href,
+  vue: new URL("../assets/skills/vue.png", import.meta.url).href,
+  ts: new URL("../assets/skills/ts.png", import.meta.url).href,
   tailwind: new URL("../assets/skills/tailwind.png", import.meta.url).href,
   node: new URL("../assets/skills/node.png", import.meta.url).href,
   sql: new URL("../assets//skills/sql.png", import.meta.url).href,
