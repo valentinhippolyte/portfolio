@@ -4,7 +4,11 @@
     class="pl-2 pr-4 py-2 flex flex-row items-center rounded-sm text-xs font-bold bg-app-green text-white hover: cursor-pointer"
   >
     <span class="text-xs">{{ selectedLanguage === "en" ? "En" : "Fr" }}</span>
-    <img :src="images[selectedLanguage]" class="w-4 h-4 ml-1" />
+    <img
+      :src="images[selectedLanguage]"
+      :alt="selectedLanguage === 'en' ? 'English flag' : 'Drapeau français'"
+      class="w-4 h-4 ml-1"
+    />
   </button>
 </template>
 

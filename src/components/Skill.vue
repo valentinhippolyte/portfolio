@@ -4,7 +4,7 @@
       :class="`${size}`"
       class="rounded-full overflow-hidden flex justify-center items-center bg-white p-1.5 cursor-pointer"
     >
-      <img :src="src" alt="Skill icon" class="w-7 h-7 object-cover" />
+      <img :src="src" :alt="skillName" class="w-7 h-7 object-cover" />
     </div>
 
     <!-- Tooltip -->

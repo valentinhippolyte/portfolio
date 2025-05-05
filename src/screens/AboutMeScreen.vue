@@ -17,7 +17,7 @@
         >
           <!-- WHO AM I -->
           <div class="max-w-2xl flex-1">
-            <h3 class="text-2xl font-bold pb-3">{{ t("aboutMe.who") }}</h3>
+            <p class="text-2xl font-bold pb-3">{{ t("aboutMe.who") }}</p>
             <div class="flex flex-col items-start gap-3">
               <p class="text-base sm:text-xl">
                 {{ t("aboutMe.presentation1") }}
@@ -31,13 +31,13 @@
 
           <!-- SKILLS -->
           <div class="w-full max-w-2xl flex-1">
-            <h3 class="text-2xl font-bold pb-3">{{ t("aboutMe.skills") }}</h3>
+            <p class="text-2xl font-bold pb-3">{{ t("aboutMe.skills") }}</p>
 
             <!-- Languages & Frameworks -->
             <div class="flex flex-col items-start gap-3 mb-6">
               <div class="flex items-center gap-2">
                 <div class="size-3 bg-app-green rounded-full"></div>
-                <h4 class="text-xl font-bold">{{ t("aboutMe.languages") }}</h4>
+                <p class="text-xl font-bold">{{ t("aboutMe.languages") }}</p>
               </div>
               <div class="flex items-center gap-4 flex-wrap">
                 <Skill :src="images.vue" skillName="Vue.js" />
@@ -52,7 +52,7 @@
             <div class="flex flex-col items-start gap-3">
               <div class="flex items-center gap-2">
                 <div class="size-3 bg-app-green rounded-full"></div>
-                <h4 class="text-xl font-bold">{{ t("aboutMe.tools") }}</h4>
+                <p class="text-xl font-bold">{{ t("aboutMe.tools") }}</p>
               </div>
               <div class="flex items-center gap-4 flex-wrap">
                 <Skill :src="images.git" skillName="Git" />

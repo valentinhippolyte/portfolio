@@ -27,9 +27,9 @@
               class="w-full h-58 object-cover rounded-t-2xl"
             />
             <div class="flex justify-between items-end pl-2 pr-4">
-              <h3 class="text-2xl text-white font-bold pt-3 pl-2">
+              <p class="text-2xl text-white font-bold pt-3 pl-2">
                 {{ project.title }}
-              </h3>
+              </p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="35"
