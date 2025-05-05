@@ -66,7 +66,7 @@ const { t } = useI18n();
 const projects = [
   {
     key: "casa-cal-y-sol",
-    image: new URL("../assets/portfolio/casaCalYSol.jpg", import.meta.url).href,
+    image: new URL("../assets/portfolio/casacalysol.png", import.meta.url).href,
     title: "Casa Cal Y Sol",
   },
   {

@@ -33,7 +33,7 @@
       "casa-cal-y-sol": {
         "description": "Casa Cal y Sol is a showcase website I'm building for my parents, who fulfilled their dream of moving to a white village in Andalusia. The site allows visitors to explore their holiday home, check availability, and book a stay in a warm and authentic atmosphere.",
         "features": {
-          "1": "House presentation with an image gallery",
+          "1": "Development of the site based on a personalized graphic charter",
           "2": "Availability calendar synchronized with Smoobu",
           "3": "Contact and booking form",
           "4": "Multilingual version with translation management (Vue I18n)"

@@ -33,7 +33,7 @@
       "casa-cal-y-sol": {
         "description": "Casa Cal y Sol est un site vitrine que je développe pour mes parents, qui ont réalisé leur rêve en s’installant dans un village blanc d’Andalousie. Le site permet de découvrir leur maison de vacances, consulter les disponibilités et réserver un séjour dans une ambiance chaleureuse et authentique.",
         "features": {
-          "1": "Présentation de la maison avec galerie d’images",
+          "1": "Développement du site à partir d’une charte graphique personnalisée",
           "2": "Calendrier de disponibilités synchronisé avec Smoobu",
           "3": "Formulaire de contact et de réservation",
           "4": "Version multilingue avec gestion des traductions (Vue I18n)"

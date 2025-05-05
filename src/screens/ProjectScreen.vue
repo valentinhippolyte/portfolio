@@ -250,14 +250,14 @@ const projects = [
     firstTitle: "Casa",
     secondTitle: "Cal Y Sol",
     description: t("projects.project-info.casa-cal-y-sol.description"),
-    image: new URL("../assets/portfolio/casaCalYSol.jpg", import.meta.url).href,
+    image: new URL("../assets/portfolio/casacalysol.png", import.meta.url).href,
     stacks: [
       { skillName: "Vue.js", image: images.vue },
       { skillName: "TypeScript", image: images.ts },
       { skillName: "Figma", image: images.figma },
     ],
-    github: "link",
-    site: "link",
+    github: "https://github.com/valentinhippolyte/casa-cal-y-sol",
+    site: "https://casacalysol.com",
 
     features: [
       t("projects.project-info.casa-cal-y-sol.features.1"),
