@@ -1,5 +1,6 @@
 import Home from "./components/Home.vue";
 import NotFoundScreen from "./screens/notFoundScreen.vue";
+
 import ProjectScreen from "./screens/ProjectScreen.vue";
 
 export const routes = [

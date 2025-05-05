@@ -71,7 +71,7 @@
 <script setup>
 import { useI18n } from "vue-i18n";
 import Skill from "../components/Skill.vue";
-import Title from "../components/title.vue";
+import Title from "../components/Title.vue";
 
 const { t } = useI18n();
 
