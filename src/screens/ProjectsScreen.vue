@@ -75,10 +75,9 @@ const projects = [
     title: "Ghiblix",
   },
   {
-    key: "daily-tracker",
-    image: new URL("../assets/portfolio/dailyTracker.png", import.meta.url)
-      .href,
-    title: "DailyTracker",
+    key: "full-stack-boilerplate",
+    image: new URL("../assets/portfolio/boilerplate.png", import.meta.url).href,
+    title: "Full Stack Boilerplate",
   },
 ];
 </script>

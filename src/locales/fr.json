@@ -27,7 +27,7 @@
     "description": {
       "casa-cal-y-sol": "Un site vitrine pour une maison de vacances en Andalousie avec un système de réservation intégré.",
       "ghiblix": "Une application pour découvrir et gérer les films des studios Ghibli : ajout aux favoris, suivi de vue et exploration des films.",
-      "daily-tracker": "Un outil pour suivre ses tâches quotidiennes et ses objectifs, conçu pour améliorer l'efficacité et la productivité."
+      "full-stack-boilerplate": "Un modèle d'application full-stack minimal conçu pour servir de point de départ, conteneurisé avec Docker."
     },
     "project-info": {
       "casa-cal-y-sol": {
@@ -50,15 +50,15 @@
         },
         "challenge": "L’un des défis a été la gestion de l’état utilisateur (films vus) de façon sécurisée et persistante. J’ai mis en place une authentification JWT et une API REST pour permettre à chaque utilisateur de retrouver son suivi personnel. Ce projet m’a permis de mieux structurer une architecture Full Stack complète (front, back, BDD) et de m’habituer à un vrai workflow Git, même en solo, avec branches, merges et bonnes pratiques."
       },
-      "daily-tracker": {
-        "description": "Daily Tracker est une application minimaliste que j’ai créée pour suivre mes routines quotidiennes de façon simple et rapide. Je voulais un outil léger, fonctionnel et agréable, dans l’esprit d’un carnet numérique. Elle s’adresse à toute personne qui veut garder une trace de ses habitudes sans se perdre dans des options.",
+      "full-stack-boilerplate": {
+        "description": "Ce projet est un modèle d'application full-stack minimal conçu pour servir de point de départ flexible à la création d'applications web full-stack. L'application est structurée avec une séparation claire entre le front-end et le back-end, facilitant ainsi la scalabilité et la personnalisation. Docker est utilisé pour conteneuriser l'application, simplifiant ainsi le déploiement et garantissant la cohérence entre les différents environnements.",
         "features": {
-          "1": "Création d’habitudes (todo) simples",
-          "2": "Complétion d’habitudes en un clic",
-          "3": "Authentification par JWT",
-          "4": "Interface responsive en Vue.js + Tailwind"
+          "1": "Structure d'application full-stack évolutive et personnalisable",
+          "2": "Authentification utilisateur basée sur JWT pour un accès sécurisé",
+          "3": "Environnement de développement convivial avec conteneurs Docker pour le front-end, le back-end et la base de données",
+          "4": "Configuration des services (front-end, back-end et MongoDB) dans un seul fichier docker-compose.yml"
         },
-        "challenge": "J’ai pu consolider ma compréhension de l’authentification avec JWT et la gestion de l’état utilisateur dans une app Vue.js, ce qui m’a donné une base solide pour d’autres projets avec authentification."
+        "challenge": "J'ai créé un modèle full-stack réutilisable pour approfondir ma compréhension de Docker et des environnements multi-conteneurs. Il simplifie le développement local grâce à une intégration claire entre le front-end, le back-end et la base de données."
       },
       "main_features": "Fonctionnalités principales",
       "challenges": "Défis",

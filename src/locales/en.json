@@ -27,7 +27,7 @@
     "description": {
       "casa-cal-y-sol": "A showcase site for a vacation home in Andalusia with an integrated booking system.",
       "ghiblix": "An app to discover and manage Ghibli films: add to favorites, track views, and explore films.",
-      "daily-tracker": "A tool to track daily tasks and goals, designed to improve efficiency and productivity."
+      "full-stack-boilerplate": "A minimal full-stack application template designed to serve as a starting point, containerized with Docker."
     },
     "project-info": {
       "casa-cal-y-sol": {
@@ -50,15 +50,15 @@
         },
         "challenge": "One of the challenges was managing user state (watched movies) in a secure and persistent way. I implemented JWT authentication and a REST API to let users access their personal watchlist. This project helped me structure a full Full Stack architecture (front, back, DB) and practice a solid Git workflow, even solo."
       },
-      "daily-tracker": {
-        "description": "Daily Tracker is a minimalist app I created to track my daily routines in a quick and simple way. I wanted a lightweight, functional, and pleasant tool — like a digital daily notebook. It's aimed at anyone who wants to keep track of habits without getting lost in too many features.",
+      "full-stack-boilerplate": {
+        "description": "This project is a minimal full-stack application boilerplate designed to be a flexible starting point for building full-stack web applications. The app is structured with a clear separation between the front-end and back-end, allowing for easy scaling and customization. Docker is used to containerize the application, simplifying deployment and ensuring consistency across different environments.",
         "features": {
-          "1": "Create simple habits (todo items)",
-          "2": "Mark habits as completed in one click",
-          "3": "JWT-based authentication",
-          "4": "Responsive UI built with Vue.js + Tailwind"
+          "1": "Scalable, customizable full-stack app structure",
+          "2": "JWT-based user authentication for secure access",
+          "3": "Easy-to-use development environment with Docker containers for front-end, back-end, and database",
+          "4": "Configuration of services (front-end, back-end, and MongoDB) in a single docker-compose.yml file"
         },
-        "challenge": "I strengthened my understanding of JWT authentication and user state management in a Vue.js app, giving me a solid foundation for other projects with auth."
+        "challenge": "I created a reusable full-stack boilerplate to deepen my understanding of Docker and multi-container environments. It simplifies local development with a clear integration between front-end, back-end, and database."
       },
       "main_features": "Main Features",
       "challenges": "Challenges",
