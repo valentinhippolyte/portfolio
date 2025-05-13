@@ -295,27 +295,26 @@ const projects = [
     challenges: t("projects.project-info.ghiblix.challenge"),
   },
   {
-    id: "daily-tracker",
-    firstTitle: "Daily",
-    secondTitle: "Tracker",
-    description: t("projects.project-info.daily-tracker.description"),
-    image: new URL("../assets/portfolio/dailyTracker.png", import.meta.url)
-      .href,
+    id: "full-stack-boilerplate",
+    firstTitle: "Full Stack",
+    secondTitle: "Boilerplate",
+    description: t("projects.project-info.full-stack-boilerplate.description"),
+    image: new URL("../assets/portfolio/boilerplate.png", import.meta.url).href,
     stacks: [
       { skillName: "Vue.js", image: images.vue },
-      { skillName: "Tailwind", image: images.tailwind },
+      { skillName: "Docker", image: images.docker },
       { skillName: "Node.js", image: images.node },
       { skillName: "Git", image: images.git },
     ],
-    github: "https://github.com/valentinhippolyte/DailyTrack",
+    github: "https://github.com/valentinhippolyte/my-fullstack-boilerplate",
 
     features: [
-      t("projects.project-info.daily-tracker.features.1"),
-      t("projects.project-info.daily-tracker.features.2"),
-      t("projects.project-info.daily-tracker.features.3"),
-      t("projects.project-info.daily-tracker.features.4"),
+      t("projects.project-info.full-stack-boilerplate.features.1"),
+      t("projects.project-info.full-stack-boilerplate.features.2"),
+      t("projects.project-info.full-stack-boilerplate.features.3"),
+      t("projects.project-info.full-stack-boilerplate.features.4"),
     ],
-    challenges: t("projects.project-info.daily-tracker.challenge"),
+    challenges: t("projects.project-info.full-stack-boilerplate.challenge"),
   },
 ];
 </script>
