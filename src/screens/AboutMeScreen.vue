@@ -78,7 +78,7 @@ import Title from "../components/Title.vue";
 const { t } = useI18n();
 
 const images = {
-  vue: new URL("../assets/skills/vuejs.png", import.meta.url).href,
+  vue: new URL("../assets/skills/vue.png", import.meta.url).href,
   symfony: new URL("../assets/skills/symfony.png", import.meta.url).href,
   ts: new URL("../assets/skills/typeScript.png", import.meta.url).href,
   tailwind: new URL("../assets/skills/tailwind.png", import.meta.url).href,
