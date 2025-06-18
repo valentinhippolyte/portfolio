@@ -19,7 +19,7 @@
           class="block"
         >
           <div
-            class="bg-app-green-700 rounded-2xl w-96 h-96 transform transition-all duration-200 hover:scale-102 hover:shadow-lg hover:cursor-pointer"
+            class="bg-app-green-700 rounded-2xl w-96 h-96 transform transition-all duration-200 hover:scale-101 hover:shadow-lg hover:cursor-pointer"
           >
             <img
               :src="project.image"

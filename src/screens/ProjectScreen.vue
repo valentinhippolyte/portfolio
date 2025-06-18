@@ -1,11 +1,32 @@
 <template>
   <section class="bg-app-second-bg px-6">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="w-full md:w-2/3 px-2 pt-8 sm:pt-16 md:pt-26 lg:pt-40">
-        <h2 class="text-4xl font-bold text-app-orange">
-          {{ currentProject?.firstTitle }}
-          <span class="text-white">{{ currentProject?.secondTitle }}</span>
-        </h2>
+      <div class="w-full md:w-2/3 px-2 pt-4 sm:pt-10 md:pt-16 lg:pt-20">
+        <div class="flex flex-col gap-6">
+          <router-link to="/">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-arrow-left-icon lucide-circle-arrow-left"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M16 12H8" />
+              <path d="m12 8-4 4 4 4" />
+            </svg>
+          </router-link>
+          <h2 class="text-4xl font-bold text-app-orange">
+            {{ currentProject?.firstTitle }}
+            <span class="text-white">{{ currentProject?.secondTitle }}</span>
+          </h2>
+        </div>
+
         <div class="bg-app-green h-1.5 w-13 mt-1"></div>
       </div>
 
@@ -14,11 +35,21 @@
       >
         <!-- Image -->
         <div class="w-full md:w-2/3 flex justify-center">
-          <img
-            :src="currentProject?.image"
-            class="rounded-xl object-cover shadow-lg max-w-full h-auto sm:h-72 md:h-80 lg:h-96"
-            :alt="currentProject.id"
-          />
+          <a
+            :href="currentProject?.site"
+            target="_blank"
+            :class="
+              currentProject?.site
+                ? 'hover:cursor-pointer hover:scale-101 transition-all duration-200 ease-in-out'
+                : ''
+            "
+          >
+            <img
+              :src="currentProject?.image"
+              class="rounded-xl object-cover shadow-lg max-w-full h-auto sm:h-72 md:h-80 lg:h-96"
+              :alt="currentProject.id"
+            />
+          </a>
         </div>
 
         <!-- Texte -->
@@ -43,7 +74,7 @@
             >
               <button
                 type="button"
-                class="text-white bg-app-green hover:bg-app-green-600 hover:scale-105 transition-all duration-300 ease-in-out hover:cursor-pointer rounded-2xl text-sm px-3 py-2 text-center inline-flex items-center"
+                class="text-white bg-app-green hover:bg-app-green-600 hover:scale-101 transition-all duration-200 ease-in-out hover:cursor-pointer rounded-2xl text-sm px-3 py-2 text-center inline-flex items-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +104,7 @@
             >
               <button
                 type="button"
-                class="text-white bg-app-green hover:bg-app-green-600 hover:scale-105 transition-all duration-300 ease-in-out hover:cursor-pointer rounded-2xl text-sm px-3 py-2 text-center inline-flex items-center"
+                class="text-white bg-app-green hover:bg-app-green-600 hover:scale-101 transition-all duration-200 ease-in-out hover:cursor-pointer rounded-2xl text-sm px-3 py-2 text-center inline-flex items-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -258,7 +289,8 @@ const projects = [
     image: new URL("../assets/portfolio/casacalysol.png", import.meta.url).href,
     stacks: [
       { skillName: "Vue.js", image: images.vue },
-      { skillName: "TypeScript", image: images.ts },
+      { skillName: "Tailwind", image: images.tailwind },
+      { skillName: "Node.js", image: images.node },
       { skillName: "Figma", image: images.figma },
     ],
     github: "https://github.com/valentinhippolyte/casa-cal-y-sol",

@@ -9,6 +9,7 @@
     "im": "C'est",
     "firstname": "Valentin",
     "lastname": "HIPPOLYTE",
+    "job": "Développeur Full Stack",
     "cv": "mon cv"
   },
   "aboutMe": {
@@ -16,8 +17,8 @@
     "title2": "DE MOI",
     "who": "QUI SUIS-JE ?",
     "skills": "Compétences",
-    "presentation1": "Bonjour, je m'appelle Valentin HIPPOLYTE, un développeur motivé et dynamique, titulaire d'un Master Expert en ingénierie informatique.",
-    "presentation2": "Après trois années d'alternance chez Worldline, où j'ai développé des fonctionnalités pour des clients bancaires internationaux, je suis maintenant à la recherche d'un nouveau défi professionnel.",
+    "presentation1": "Bonjour, je m'appelle Valentin HIPPOLYTE, un développeur motivé et dynamique, diplômé d'un Master <span class='font-[800]'>Expert en ingénierie informatique</span>.",
+    "presentation2": "Après <span class='font-[800]'>trois ans</span> d’alternance chez <span class='font-[800]'>Worldline</span>, où j’ai contribué au développement de fonctionnalités pour des <span class='font-[800]'>clients bancaires internationaux</span>, je suis aujourd’hui à la recherche d’un <span class='font-[800]'>nouveau défi professionnel</span>.",
     "languages": "Langages et Frameworks:",
     "tools": "Outils et Workflow:"
   },
@@ -31,34 +32,34 @@
     },
     "project-info": {
       "casa-cal-y-sol": {
-        "description": "Casa Cal y Sol est un site vitrine que je développe pour mes parents, qui ont réalisé leur rêve en s’installant dans un village blanc d’Andalousie. Le site permet de découvrir leur maison de vacances, consulter les disponibilités et réserver un séjour dans une ambiance chaleureuse et authentique.",
+        "description": "Site vitrine développé pour une maison de vacances familiale en Andalousie. Présentation, disponibilités, formulaire de réservation, tout est pensé pour une expérience simple et chaleureuse.",
         "features": {
           "1": "Développement du site à partir d’une charte graphique personnalisée",
           "2": "Calendrier de disponibilités synchronisé avec Smoobu",
           "3": "Formulaire de contact et de réservation",
           "4": "Version multilingue avec gestion des traductions (Vue I18n)"
         },
-        "challenge": "Intégrer et personnaliser l’API de Smoobu pour afficher un calendrier synchronisé sans utiliser leur widget par défaut m’a permis de mieux comprendre la gestion d’API tierces et l’importance de l’UX dans un projet destiné à des utilisateurs non-tech."
+        "challenge": "Intégration de l’API Smoobu en contournant leur widget pour un affichage du calendrier 100 % personnalisé, en accord avec la charte graphique et l’expérience utilisateur."
       },
       "ghiblix": {
-        "description": "Ghiblix est une application Full Stack que j’ai développée pour une amie fan du studio Ghibli, et pour moi-même, afin de découvrir ses films et suivre ceux que j’ai déjà vus. L’objectif : offrir une interface simple et élégante pour parcourir les œuvres du studio, consulter les détails des films, et marquer ceux que l’on a visionnés.",
+        "description": "Ghiblix est une application Full Stack que j’ai développée pour allier plaisir personnel et montée en compétences. Elle permet de découvrir les films du studio Ghibli, consulter leurs fiches et suivre ceux déjà vus, dans une interface sobre et responsive.",
         "features": {
           "1": "Liste complète des films du studio, avec affiches, titres et résumés",
           "2": "Possibilité de marquer les films comme “vus” pour suivre sa progression",
           "3": "Accès aux informations complètes d’un film : description, date de sortie, réalisateur, etc.",
           "4": "Connexion / inscription avec JWT pour gérer un profil et sauvegarder ses données"
         },
-        "challenge": "L’un des défis a été la gestion de l’état utilisateur (films vus) de façon sécurisée et persistante. J’ai mis en place une authentification JWT et une API REST pour permettre à chaque utilisateur de retrouver son suivi personnel. Ce projet m’a permis de mieux structurer une architecture Full Stack complète (front, back, BDD) et de m’habituer à un vrai workflow Git, même en solo, avec branches, merges et bonnes pratiques."
+        "challenge": "Gérer l’état utilisateur (films vus) de façon sécurisée et persistante. Mise en place d’une API REST avec authentification JWT pour un suivi personnel. Ce projet m’a permis de structurer une architecture Full Stack complète et d’adopter un workflow Git propre, même en solo."
       },
       "full-stack-boilerplate": {
-        "description": "Ce projet est un modèle d'application full-stack minimal conçu pour servir de point de départ flexible à la création d'applications web full-stack. L'application est structurée avec une séparation claire entre le front-end et le back-end, facilitant ainsi la scalabilité et la personnalisation. Docker est utilisé pour conteneuriser l'application, simplifiant ainsi le déploiement et garantissant la cohérence entre les différents environnements.",
+        "description": "Modèle d’application Full Stack minimal, conçu comme base flexible pour des projets web. Architecture claire front/back, conteneurisée avec Docker pour un déploiement simplifié et cohérent.",
         "features": {
           "1": "Structure d'application full-stack évolutive et personnalisable",
           "2": "Authentification utilisateur basée sur JWT pour un accès sécurisé",
-          "3": "Environnement de développement convivial avec conteneurs Docker pour le front-end, le back-end et la base de données",
+          "3": "Environnement avec conteneurs Docker pour le front-end, le back-end et la base de données",
           "4": "Configuration des services (front-end, back-end et MongoDB) dans un seul fichier docker-compose.yml"
         },
-        "challenge": "J'ai créé un modèle full-stack réutilisable pour approfondir ma compréhension de Docker et des environnements multi-conteneurs. Il simplifie le développement local grâce à une intégration claire entre le front-end, le back-end et la base de données."
+        "challenge": "Comprendre Docker et les environnements multi-conteneurs à travers un modèle Full Stack minimal, avec intégration claire du front, du back et de la BDD."
       },
       "main_features": "Fonctionnalités principales",
       "challenges": "Défis",

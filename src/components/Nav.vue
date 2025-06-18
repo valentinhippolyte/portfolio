@@ -6,13 +6,13 @@
         <p
           v-for="link in navLinks"
           :key="link.key"
-          class="text-base sm:text-xl text-white font-bold relative group cursor-pointer transition-colors duration-300 hover:text-app-green"
+          class="text-base sm:text-xl text-white font-bold relative group cursor-pointer transition-colors duration-200 hover:text-app-green"
         >
           <a :href="'#' + link.key" class="block" :aria-label="link.label">
             {{ t(link.label) }}
           </a>
           <span
-            class="absolute left-0 -bottom-1 h-0.5 w-0 bg-app-green transition-all duration-300 group-hover:w-full"
+            class="absolute left-0 -bottom-1 h-0.5 w-0 bg-app-green transition-all duration-200 group-hover:w-full"
           ></span>
         </p>
       </div>

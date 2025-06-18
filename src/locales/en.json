@@ -9,6 +9,7 @@
     "im": "I'm",
     "firstname": "Valentin",
     "lastname": "HIPPOLYTE",
+    "job": "Full Stack Developer",
     "cv": "my cv"
   },
   "aboutMe": {
@@ -16,8 +17,8 @@
     "title2": "ME",
     "who": "WHO AM I?",
     "skills": "SKILLS",
-    "presentation1": "Hello, my name is Valentin HIPPOLYTE, a motivated and dynamic developer with a Master’s degree in Computer Engineering.",
-    "presentation2": "After three years of apprenticeship at Worldline, where I developed features for international banking clients, I am now looking for a new professional challenge.",
+    "presentation1": "Hello, my name is Valentin HIPPOLYTE, a motivated and dynamic developer with a Master’s degree in <span class='font-[800]'>Computer Engineering</span>.",
+    "presentation2": "After <span class='font-[800]'>three years</span> of apprenticeship at <span class='font-[800]'>Worldline</span>, where I developed features for international banking clients, I am now looking for a <span class='font-[800]'>new professional challenge</span>.",
     "languages": "Languages & Frameworks:",
     "tools": "Tools & Workflow:"
   },
@@ -25,40 +26,40 @@
     "title1": "SOME",
     "title2": "PROJECTS",
     "description": {
-      "casa-cal-y-sol": "A showcase site for a vacation home in Andalusia with an integrated booking system.",
+      "casa-cal-y-sol": "A showcase website for a family vacation home in Andalusia with an integrated booking system.",
       "ghiblix": "An app to discover and manage Ghibli films: add to favorites, track views, and explore films.",
       "full-stack-boilerplate": "A minimal full-stack application template designed to serve as a starting point, containerized with Docker."
     },
     "project-info": {
       "casa-cal-y-sol": {
-        "description": "Casa Cal y Sol is a showcase website I'm building for my parents, who fulfilled their dream of moving to a white village in Andalusia. The site allows visitors to explore their holiday home, check availability, and book a stay in a warm and authentic atmosphere.",
+        "description": "A showcase website developed for a family vacation home in Andalusia. Presentation, availability, and a reservation form are all designed to create a simple and welcoming experience.",
         "features": {
           "1": "Development of the site based on a personalized graphic charter",
           "2": "Availability calendar synchronized with Smoobu",
           "3": "Contact and booking form",
           "4": "Multilingual version with translation management (Vue I18n)"
         },
-        "challenge": "Integrating and customizing the Smoobu API to display a synced calendar without using their default widget helped me deepen my understanding of third-party API integration and the importance of user experience in a project aimed at non-tech users."
+        "challenge": "Integration of the Smoobu API by bypassing their widget for a 100% personalized calendar display, in accordance with the graphic charter and user experience."
       },
       "ghiblix": {
-        "description": "Ghiblix is a Full Stack app I developed for a friend who’s a big Studio Ghibli fan — and for myself to discover its films and track the ones I've already watched. The goal: offer a simple and elegant interface to browse the studio's works, view film details, and mark those you’ve seen.",
+        "description": "Ghiblix is ​​a full-stack application I developed to combine personal enjoyment with skill development. It allows you to discover Studio Ghibli films, view their profiles, and track those you've already seen, all in a simple, responsive interface.",
         "features": {
           "1": "Complete list of Studio Ghibli movies, with posters, titles, and summaries",
           "2": "Ability to mark movies as 'watched' to track your progress",
           "3": "Detailed movie pages with description, release date, director, etc.",
           "4": "Sign up / login with JWT to manage a personal profile and save your data"
         },
-        "challenge": "One of the challenges was managing user state (watched movies) in a secure and persistent way. I implemented JWT authentication and a REST API to let users access their personal watchlist. This project helped me structure a full Full Stack architecture (front, back, DB) and practice a solid Git workflow, even solo."
+        "challenge": "Managing user state (movies watched) securely and persistently. Implementing a REST API with JWT authentication for personal tracking. This project allowed me to structure a complete Full Stack architecture and adopt a clean Git workflow, even solo."
       },
       "full-stack-boilerplate": {
-        "description": "This project is a minimal full-stack application boilerplate designed to be a flexible starting point for building full-stack web applications. The app is structured with a clear separation between the front-end and back-end, allowing for easy scaling and customization. Docker is used to containerize the application, simplifying deployment and ensuring consistency across different environments.",
+        "description": "Minimal full-stack application template designed as a flexible foundation for web projects. Clear front-end/back-end architecture, containerized with Docker for simplified and consistent deployment.",
         "features": {
           "1": "Scalable, customizable full-stack app structure",
           "2": "JWT-based user authentication for secure access",
-          "3": "Easy-to-use development environment with Docker containers for front-end, back-end, and database",
+          "3": "Development environment with Docker containers for front-end, back-end, and database",
           "4": "Configuration of services (front-end, back-end, and MongoDB) in a single docker-compose.yml file"
         },
-        "challenge": "I created a reusable full-stack boilerplate to deepen my understanding of Docker and multi-container environments. It simplifies local development with a clear integration between front-end, back-end, and database."
+        "challenge": "Understanding Docker and multi-container environments through a minimal Full Stack model, with clear integration of front, back, and database."
       },
       "main_features": "Main Features",
       "challenges": "Challenges",
