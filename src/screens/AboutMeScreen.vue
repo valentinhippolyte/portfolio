@@ -19,13 +19,15 @@
           <div class="max-w-2xl flex-1">
             <p class="text-2xl font-bold pb-3">{{ t("aboutMe.who") }}</p>
             <div class="flex flex-col items-start gap-3">
-              <p class="text-base sm:text-xl">
-                {{ t("aboutMe.presentation1") }}
-              </p>
+              <p
+                class="text-base sm:text-xl"
+                v-html="t('aboutMe.presentation1')"
+              ></p>
               <br />
-              <p class="text-base sm:text-xl">
-                {{ t("aboutMe.presentation2") }}
-              </p>
+              <p
+                class="text-base sm:text-xl font-light"
+                v-html="t('aboutMe.presentation2')"
+              ></p>
             </div>
           </div>
 
@@ -41,9 +43,9 @@
               </div>
               <div class="flex items-center gap-4 flex-wrap">
                 <Skill :src="images.vue" skillName="Vue.js" />
-                <Skill :src="images.ts" skillName="TypeScript" />
-                <Skill :src="images.tailwind" skillName="Tailwind CSS" />
                 <Skill :src="images.node" skillName="Node.js" />
+                <Skill :src="images.symfony" skillName="Symfony" />
+                <Skill :src="images.tailwind" skillName="Tailwind CSS" />
                 <Skill :src="images.sql" skillName="SQL" />
               </div>
             </div>
@@ -77,6 +79,7 @@ const { t } = useI18n();
 
 const images = {
   vue: new URL("../assets/skills/vuejs.png", import.meta.url).href,
+  symfony: new URL("../assets/skills/symfony.png", import.meta.url).href,
   ts: new URL("../assets/skills/typeScript.png", import.meta.url).href,
   tailwind: new URL("../assets/skills/tailwind.png", import.meta.url).href,
   node: new URL("../assets/skills/node.png", import.meta.url).href,

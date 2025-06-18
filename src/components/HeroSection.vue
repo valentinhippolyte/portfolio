@@ -20,6 +20,7 @@
             }}</span>
           </span>
         </p>
+        <p class="my-4 text-2xl sm:text-3xl" v-html="t('introduce.job')"></p>
 
         <div
           class="flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-0 mt-2"
@@ -31,7 +32,7 @@
               aria-label="Email"
             >
               <div
-                class="size-10 rounded-full overflow-hidden flex items-center bg-white p-2 transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:cursor-pointer"
+                class="size-10 rounded-full overflow-hidden flex items-center bg-white p-2 transition-transform duration-300 ease-in-out hover:scale-101 hover:-translate-y-1 hover:cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +58,7 @@
               aria-label="LinkedIn"
             >
               <div
-                class="size-10 rounded-full overflow-hidden flex justify-center items-center bg-white p-1.5 transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:cursor-pointer"
+                class="size-10 rounded-full overflow-hidden flex justify-center items-center bg-white p-1.5 transition-transform duration-300 ease-in-out hover:scale-101 hover:-translate-y-1 hover:cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +86,7 @@
               aria-label="GitHub"
             >
               <div
-                class="size-10 rounded-full overflow-hidden flex justify-center items-center bg-white p-1.5 transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:cursor-pointer"
+                class="size-10 rounded-full overflow-hidden flex justify-center items-center bg-white p-1.5 transition-transform duration-300 ease-in-out hover:scale-101 hover:-translate-y-1 hover:cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +121,7 @@
             >
               <button
                 type="button"
-                class="text-white bg-app-green hover:bg-app-green-600 hover:scale-105 transition-all duration-300 ease-in-out hover:cursor-pointer rounded-2xl text-sm px-3 py-2 text-center inline-flex items-center"
+                class="text-white bg-app-green hover:bg-app-green-600 hover:scale-101 transition-all duration-300 ease-in-out hover:cursor-pointer rounded-2xl text-sm px-3 py-2 text-center inline-flex items-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

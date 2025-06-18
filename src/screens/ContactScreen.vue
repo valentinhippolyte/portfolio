@@ -10,10 +10,11 @@
       />
 
       <div
-        class="flex flex-col gap-16 px-14 lg:flex-row lg:justify-around pt-16 md:pt-26 lg:pt-40"
+        class="flex flex-col gap-8 sm:gap-16 px-6 sm:px-14 lg:flex-row lg:justify-around pt-8 sm:pt-16 md:pt-26 lg:pt-40"
       >
+        <!-- Première ligne : Téléphone et Email -->
         <div
-          class="flex flex-col sm:flex-row justify-around items-center gap-10 w-full"
+          class="flex flex-col sm:flex-row justify-around items-center gap-6 sm:gap-10 w-full"
         >
           <!-- Phone part -->
           <a
@@ -22,22 +23,24 @@
             class="w-full sm:w-1/2 lg:w-1/2"
             aria-label="Phone"
           >
-            <div class="flex flex-col items-center gap-4 mb-10">
+            <div
+              class="flex flex-col items-center gap-2 sm:gap-4 mb-6 sm:mb-10"
+            >
               <!-- Icon -->
               <div
-                class="size-16 rounded-full overflow-hidden flex items-center bg-white p-2 hover:cursor-pointer"
+                class="size-12 sm:size-16 rounded-full overflow-hidden flex items-center bg-white p-1.5 sm:p-2 hover:cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="90"
-                  height="90"
+                  width="60"
+                  height="60"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#117f7e"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="lucide lucide-phone-icon lucide-phone"
+                  class="lucide lucide-phone-icon lucide-phone sm:w-[90px] sm:h-[90px]"
                 >
                   <path
                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
@@ -45,11 +48,13 @@
                 </svg>
               </div>
               <!-- Title -->
-              <p class="text-xl text-white font-bold">
+              <p class="text-lg sm:text-xl text-white font-bold text-center">
                 {{ t("contactMe.phone.title") }}
               </p>
               <!-- value -->
-              <p class="text-lg text-white">{{ t("contactMe.phone.value") }}</p>
+              <p class="text-base sm:text-lg text-white text-center">
+                {{ t("contactMe.phone.value") }}
+              </p>
             </div>
           </a>
 
@@ -60,59 +65,64 @@
             class="w-full sm:w-1/2 lg:w-1/2"
             aria-label="Email"
           >
-            <div class="flex flex-col items-center gap-4 mb-10">
+            <div
+              class="flex flex-col items-center gap-2 sm:gap-4 mb-6 sm:mb-10"
+            >
               <!-- Icon -->
               <div
-                class="size-16 rounded-full overflow-hidden flex items-center bg-white p-2 hover:cursor-pointer"
+                class="size-12 sm:size-16 rounded-full overflow-hidden flex items-center bg-white p-1.5 sm:p-2 hover:cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="90"
-                  height="90"
+                  width="60"
+                  height="60"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#117f7e"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="lucide lucide-mail-icon lucide-mail"
+                  class="lucide lucide-mail-icon lucide-mail sm:w-[90px] sm:h-[90px]"
                 >
                   <rect width="20" height="16" x="2" y="4" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
               </div>
               <!-- Title -->
-              <p class="text-xl text-white font-bold">
+              <p class="text-lg sm:text-xl text-white font-bold text-center">
                 {{ t("contactMe.mail.title") }}
               </p>
               <!-- value -->
-              <p class="text-lg text-white">valentin.hippolyte@outlook.fr</p>
+              <p class="text-base sm:text-lg text-white text-center">
+                valentin.hippolyte@outlook.fr
+              </p>
             </div>
           </a>
         </div>
 
+        <!-- Deuxième ligne : Adresse et Réseaux sociaux -->
         <div
-          class="flex flex-col sm:flex-row justify-around items-center gap-10 w-full"
+          class="flex flex-col sm:flex-row justify-around items-center gap-6 sm:gap-10 w-full"
         >
           <!-- Address part -->
           <div
-            class="flex flex-col items-center gap-4 mb-10 w-full sm:w-1/2 lg:w-1/2"
+            class="flex flex-col items-center gap-2 sm:gap-4 mb-6 sm:mb-10 w-full sm:w-1/2 lg:w-1/2"
           >
             <!-- Icon -->
             <div
-              class="size-16 rounded-full overflow-hidden flex items-center bg-white p-2"
+              class="size-12 sm:size-16 rounded-full overflow-hidden flex items-center bg-white p-1.5 sm:p-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="90"
-                height="90"
+                width="60"
+                height="60"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="#117f7e"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-map-pin-house-icon lucide-map-pin-house"
+                class="lucide lucide-map-pin-house-icon lucide-map-pin-house sm:w-[90px] sm:h-[90px]"
               >
                 <path
                   d="M15 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 .445-.832l3-2a1 1 0 0 1 1.11 0l3 2A1 1 0 0 1 22 17v4a1 1 0 0 1-1 1z"
@@ -125,22 +135,24 @@
               </svg>
             </div>
             <!-- Title -->
-            <p class="text-xl text-white font-bold">
+            <p class="text-lg sm:text-xl text-white font-bold text-center">
               {{ t("contactMe.address.title") }}
             </p>
             <!-- value -->
-            <p class="text-lg text-white">{{ t("contactMe.address.value") }}</p>
+            <p class="text-base sm:text-lg text-white text-center">
+              {{ t("contactMe.address.value") }}
+            </p>
           </div>
 
           <!-- Socials part -->
           <div
-            class="flex flex-col items-center gap-10 mb-10 w-full sm:w-1/2 lg:w-1/2"
+            class="flex flex-col items-center gap-6 sm:gap-10 mb-6 sm:mb-10 w-full sm:w-1/2 lg:w-1/2"
           >
-            <p class="text-xl font-bold text-app-orange">
+            <p class="text-lg sm:text-xl font-bold text-app-orange text-center">
               {{ t("contactMe.follow") }}
               <span class="text-white">{{ t("contactMe.me") }}</span>
             </p>
-            <div class="flex gap-5">
+            <div class="flex gap-4 sm:gap-5">
               <!-- Icon -->
               <a
                 href="https://www.linkedin.com/in/valentin-hippolyte/"
@@ -148,19 +160,19 @@
                 aria-label="LinkedIn"
               >
                 <div
-                  class="size-12 rounded-full overflow-hidden flex items-center bg-white p-2 transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:cursor-pointer"
+                  class="size-10 sm:size-12 rounded-full overflow-hidden flex items-center bg-white p-1.5 sm:p-2 transition-transform duration-200 ease-in-out hover:scale-101 hover:-translate-y-0.5 hover:cursor-pointer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="90"
-                    height="90"
+                    width="60"
+                    height="60"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="#117f7e"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="lucide lucide-linkedin-icon lucide-linkedin"
+                    class="lucide lucide-linkedin-icon lucide-linkedin sm:w-[90px] sm:h-[90px]"
                   >
                     <path
                       d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
@@ -177,19 +189,19 @@
                 aria-label="GitHub"
               >
                 <div
-                  class="size-12 rounded-full overflow-hidden flex items-center bg-white p-2 transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:cursor-pointer"
+                  class="size-10 sm:size-12 rounded-full overflow-hidden flex items-center bg-white p-1.5 sm:p-2 transition-transform duration-200 ease-in-out hover:scale-101 hover:-translate-y-0.5 hover:cursor-pointer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="90"
-                    height="90"
+                    width="60"
+                    height="60"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="#117f7e"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="lucide lucide-github-icon lucide-github"
+                    class="lucide lucide-github-icon lucide-github sm:w-[90px] sm:h-[90px]"
                   >
                     <path
                       d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
